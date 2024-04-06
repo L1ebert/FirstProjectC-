@@ -24,12 +24,13 @@ int main()
 	cout << i2 << '\n' << b2;
 	*/
 	double d = 13.12;
-	cout << d;
+	cout << d << '\n';
 
 	char c = 'd';
-	cout << c;
+	cout << c << '\n';
 
 	int i = 123;
+	cout << i << '\n';
 
 	c = d;
 	cout << c << '\n';
