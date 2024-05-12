@@ -1,43 +1,27 @@
 #include <iostream>
 #include <bitset>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int main()
 {
-	/* 
-	printf("va");
-	cout << "Hello World!";
-	cout << "\n" << 
-	endl;
-	string str;
-	str = "123";
-	cin >> str;
-	cout << str;
-	*/
+    setlocale(LC_ALL, "ru_RU.UTF-8");
+    const int size = 10;
+    int arr[size] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    double average = 0;
 
-	/*
-	 int i1 = -26346785775;
-	bitset<32> b1(i1 -1);
-	cout << i1 << '\n' << b1 << '\n';
-	int i2 = -9885722;
-	bitset<32> b2(i1);
-	cout << i2 << '\n' << b2;
-	*/
-	double d = 13.12;
-	cout << d << '\n';
+    int sum = 0;
+    for (int i = 0; i < size; ++i) 
+    {
+        sum += arr[i];
+    }
 
-	char c = 'd';
-	cout << c << '\n';
+    if (size > 0) {
+        average = static_cast<double>(sum) / size;
+    }
 
-	int i = 123;
-	cout << i << '\n';
+    std::cout << "Среднее арифметическое: " << average << std::endl;
 
-	c = d;
-	cout << c << '\n';
-
-	cout << (int)c;
-	/*
-	БАЗА, пока учу базовые функции на С++,
-	есть флэшбэки с С#.
-	*/
+    return 0;
 }
